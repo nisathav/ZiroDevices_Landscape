@@ -222,42 +222,46 @@
     min-width: 0;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    gap: 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
     order: 1;
   }
 
   /* Product Header */
   .product-header {
     display: flex; flex-direction: column;
-    gap: 16px;
+    gap: 20px;
+    width: 100%;
+    align-items: center;
+    text-align: center;
   }
-  .product-name-wrap { flex: 1; min-width: 0; }
+  .product-name-wrap { flex: 1; min-width: 0; text-align: center; }
   .product-category-badge {
     display: inline-block;
     background: rgba(245,168,0,0.15);
     border: 1px solid rgba(245,168,0,0.4);
     color: var(--gold);
-    font-size: 24px; font-weight: 1000;
-    letter-spacing: 3px; text-transform: uppercase;
-    padding: 5px 16px; border-radius: 4px;
-    margin-bottom: 8px;
+    font-size: 36px; font-weight: 1000;
+    letter-spacing: 4px; text-transform: uppercase;
+    padding: 8px 24px; border-radius: 6px;
+    margin-bottom: 10px;
   }
   .product-name {
     font-family: 'Rajdhani', sans-serif;
-    font-size: 72px; font-weight: 700;
+    font-size: 108px; font-weight: 700;
     color: var(--white);
-    line-height: 1.1;
-    letter-spacing: 1px;
+    line-height: 1.05;
+    letter-spacing: 2px;
   }
   .product-condition {
-    display: inline-flex; align-items: center; gap: 8px;
-    margin-top: 8px;
-    font-size: 24px; font-weight: 600; letter-spacing: 2px;
+    display: inline-flex; align-items: center; gap: 10px;
+    margin-top: 10px;
+    font-size: 36px; font-weight: 600; letter-spacing: 2px;
     text-transform: uppercase;
   }
   .condition-dot {
-    width: 18px; height: 18px; border-radius: 50%;
+    width: 27px; height: 27px; border-radius: 50%;
   }
   .condition-new .condition-dot { background: #00e676; }
   .condition-refurbished .condition-dot { background: #ff9800; }
@@ -268,48 +272,49 @@
 
   /* Price */
   .price-box {
-    text-align: left; flex-shrink: 0;
+    text-align: center; flex-shrink: 0;
+    width: 100%;
   }
   .price-label {
-    font-size: 18px; letter-spacing: 3px; text-transform: uppercase;
-    color: rgba(255,255,255,0.5); margin-bottom: 2px;
+    font-size: 27px; letter-spacing: 4px; text-transform: uppercase;
+    color: rgba(255,255,255,0.5); margin-bottom: 4px;
   }
   .price-original {
     font-family: 'Rajdhani', sans-serif;
-    font-size: 46px; font-weight: 600;
+    font-size: 69px; font-weight: 600;
     color: rgba(255,255,255,0.4);
     text-decoration: line-through;
     text-decoration-color: #f44336;
-    text-decoration-thickness: 3px;
+    text-decoration-thickness: 4px;
     line-height: 1;
   }
-  .price-original .price-currency { font-size: 20px; }
+  .price-original .price-currency { font-size: 30px; }
   .price-value {
     font-family: 'Rajdhani', sans-serif;
-    font-size: 88px; font-weight: 800;
+    font-size: 132px; font-weight: 800;
     animation: pricePulse 2s infinite;
     color: var(--gold);
     line-height: 1;
   }
   .price-currency {
-    font-size: 34px; font-weight: 600;
+    font-size: 50px; font-weight: 600;
     vertical-align: super; color: var(--gold-light);
   }
   .price-save-badge {
     display: inline-block;
     background: #f44336;
     color: white;
-    font-size: 28px; font-weight: 700;
+    font-size: 42px; font-weight: 700;
     letter-spacing: 1px;
-    padding: 5px 14px; border-radius: 6px;
-    margin-top: 6px;
+    padding: 6px 20px; border-radius: 8px;
+    margin-top: 8px;
   }
 
   /* Divider line */
   .specs-divider {
     width: 100%;
-    height: 1px;
-    background: linear-gradient(90deg, transparent, rgba(245,168,0,0.4), transparent);
+    height: 2px;
+    background: linear-gradient(90deg, transparent, rgba(245,168,0,0.5), transparent);
     flex-shrink: 0;
   }
 
@@ -317,27 +322,28 @@
   .specs-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 16px 28px;
+    gap: 20px 32px;
     align-content: center;
-    padding: 8px 0;
+    padding: 10px 0;
+    width: 100%;
   }
   .spec-item {
     background: rgba(255,255,255,0.03);
     border: 1px solid rgba(245,168,0,0.1);
-    border-radius: 8px;
-    padding: 10px 8px;
+    border-radius: 10px;
+    padding: 14px 10px;
     text-align: center;
     display: flex; flex-direction: column; gap: 4px;
   }
   .spec-label {
-    font-size: 18px; font-weight: 600;
+    font-size: 27px; font-weight: 600;
     color: rgba(245,168,0,0.8);
     letter-spacing: 2px; text-transform: uppercase;
   }
   .spec-value {
-    font-size: 30px; font-weight: 500;
+    font-size: 45px; font-weight: 500;
     color: var(--white);
-    line-height: 1.3;
+    line-height: 1.2;
   }
 
   /* ─── SLIDE COUNTER ──────────────────────────────── */
