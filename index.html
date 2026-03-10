@@ -154,13 +154,14 @@
     flex: 1;
   }
 
-  /* Left Column: Image */
+  /* Right Column: Image (visually right via order) */
   .slide-left {
-    width: 520px;
-    flex-shrink: 0;
+    flex: 1;
+    min-width: 0;
     display: flex;
     flex-direction: column;
     gap: 14px;
+    order: 2;
   }
 
   .product-image-wrap {
@@ -215,14 +216,15 @@
     flex: 1;
   }
 
-  /* Right Column: Info */
+  /* Left Column: Info (visually left via order) */
   .slide-right {
     flex: 1;
+    min-width: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 16px;
-    min-width: 0;
+    order: 1;
   }
 
   /* Product Header */
@@ -417,7 +419,7 @@
     color: var(--white); letter-spacing: 0.5px;
   }
   .contact-text.phone {
-    font-size: 30px;
+    font-size: 45px;
   }
   .contact-text span { color: var(--gold); font-weight: 700; }
 
